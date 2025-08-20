@@ -9,6 +9,15 @@
       margin: 0;
       font-family: serif;
     }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffffff;
+      z-index: 1000;
+      padding-top: 10px;
+    }
     .container {
       width: 980px;
       margin: 0 auto;
@@ -16,6 +25,9 @@
     }
     .divider {
       margin: 4px 0;
+    }
+    .content {
+      padding-top: 130px;
     }
     #divDescripcion {
       margin-top: 20px;
@@ -32,22 +44,27 @@
       padding: 4px 8px;
       vertical-align: top;
     }
-    p {
+    td p {
       margin: 0;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="980" height="88">
-    <div class="divider">
-      <img src="images/DivisionBlanco.png" alt="División Blanco" width="980" height="10">
+  <div class="header">
+    <div class="container">
+      <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="980" height="88">
+      <div class="divider">
+        <img src="images/DivisionBlanco.png" alt="División Blanco" width="980" height="10">
+      </div>
+      <div class="divider">
+        <img src="images/DivisionColor.png" alt="División Color" width="980" height="10">
+      </div>
     </div>
-    <div class="divider">
-      <img src="images/DivisionColor.png" alt="División Color" width="980" height="10">
-    </div>
+  </div>
 
-    <div id="divDescripcion">
+  <div class="content">
+    <div class="container" id="divDescripcion">
       <table>
         <thead>
           <tr>
@@ -63,4 +80,12 @@
           <tr><td align="right"><p>LÍNEA:</p></td><td>&nbsp;</td><td><p>ROGUE</p></td></tr>
           <tr><td align="right"><p>MODELO:</p></td><td>&nbsp;</td><td><p>2012</p></td></tr>
           <tr><td align="right"><p>COLOR:</p></td><td>&nbsp;</td><td><p>BLANCO</p></td></tr>
-          <tr><td align="right"><p>ORIGEN:</p></td>
+          <tr><td align="right"><p>ORIGEN:</p></td><td>&nbsp;</td><td><p>EXTRANJERO</p></td></tr>
+          <tr><td align="right"><p>REPUVE:</p></td><td>&nbsp;</td><td><p>T76AV7DF</p></td></tr>
+          <tr><td align="right"><p>VIGENCIA:</p></td><td>&nbsp;</td><td><p>2024</p></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
