@@ -9,6 +9,7 @@
       margin: 0;
       font-family: serif;
     }
+
     .header {
       position: fixed;
       top: 0;
@@ -18,53 +19,73 @@
       z-index: 1000;
       padding-top: 10px;
     }
-    .container {
-      width: 980px;
+
+    .banner-container {
+      width: 567px;
       margin: 0 auto;
       text-align: center;
     }
+
     .divider {
       margin: 4px 0;
     }
+
     .content {
-      padding-top: 130px;
+      padding-top: 130px; /* Push content below fixed header */
     }
-    #divDescripcion {
-      margin-top: 20px;
-    }
-    table {
+
+    .table-container {
+      width: 980px;
       margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
       border-collapse: collapse;
     }
+
     th {
-      font-size: 1.5em;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
       padding-bottom: 10px;
     }
+
     td {
-      padding: 4px 8px;
+      padding: 6px 8px;
       vertical-align: top;
     }
+
     td p {
       margin: 0;
-      line-height: 1.8;
+      line-height: 2.2;
+    }
+
+    td:first-child {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    td:last-child {
+      text-align: left;
     }
   </style>
 </head>
 <body>
   <div class="header">
-    <div class="container">
-      <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="980" height="88">
+    <div class="banner-container">
+      <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="567" height="88">
       <div class="divider">
-        <img src="images/DivisionBlanco.png" alt="División Blanco" width="980" height="10">
+        <img src="images/DivisionBlanco.png" alt="División Blanco" width="567" height="10">
       </div>
       <div class="divider">
-        <img src="images/DivisionColor.png" alt="División Color" width="980" height="10">
+        <img src="images/DivisionColor.png" alt="División Color" width="567" height="10">
       </div>
     </div>
   </div>
 
   <div class="content">
-    <div class="container" id="divDescripcion">
+    <div class="table-container" id="divDescripcion">
       <table>
         <thead>
           <tr>
@@ -72,17 +93,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td align="right"><p>RFC:</p></td><td>&nbsp;</td><td><p>AAFC720116HN2</p></td></tr>
-          <tr><td align="right"><p>PROPIETARIO:</p></td><td>&nbsp;</td><td><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
-          <tr><td align="right"><p>PLACA:</p></td><td>&nbsp;</td><td><p>EKP165B</p></td></tr>
-          <tr><td align="right"><p>NÚMERO DE SERIE:</p></td><td>&nbsp;</td><td><p>JN8AS5MV8CW378588</p></td></tr>
-          <tr><td align="right"><p>MARCA:</p></td><td>&nbsp;</td><td><p>NISSAN</p></td></tr>
-          <tr><td align="right"><p>LÍNEA:</p></td><td>&nbsp;</td><td><p>ROGUE</p></td></tr>
-          <tr><td align="right"><p>MODELO:</p></td><td>&nbsp;</td><td><p>2012</p></td></tr>
-          <tr><td align="right"><p>COLOR:</p></td><td>&nbsp;</td><td><p>BLANCO</p></td></tr>
-          <tr><td align="right"><p>ORIGEN:</p></td><td>&nbsp;</td><td><p>EXTRANJERO</p></td></tr>
-          <tr><td align="right"><p>REPUVE:</p></td><td>&nbsp;</td><td><p>T76AV7DF</p></td></tr>
-          <tr><td align="right"><p>VIGENCIA:</p></td><td>&nbsp;</td><td><p>2024</p></td></tr>
+          <tr><td><p>RFC:</p></td><td>&nbsp;</td><td><p>AAFC720116HN2</p></td></tr>
+          <tr><td><p>PROPIETARIO:</p></td><td>&nbsp;</td><td><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
+          <tr><td><p>PLACA:</p></td><td>&nbsp;</td><td><p>EKP165B</p></td></tr>
+          <tr><td><p>NÚMERO DE SERIE:</p></td><td>&nbsp;</td><td><p>JN8AS5MV8CW378588</p></td></tr>
+          <tr><td><p>MARCA:</p></td><td>&nbsp;</td><td><p>NISSAN</p></td></tr>
+          <tr><td><p>LÍNEA:</p></td><td>&nbsp;</td><td><p>ROGUE</p></td></tr>
+          <tr><td><p>MODELO:</p></td><td>&nbsp;</td><td><p>2012</p></td></tr>
+          <tr><td><p>COLOR:</p></td><td>&nbsp;</td><td><p>BLANCO</p></td></tr>
+          <tr><td><p>ORIGEN:</p></td><td>&nbsp;</td><td><p>EXTRANJERO</p></td></tr>
+          <tr><td><p>REPUVE:</p></td><td>&nbsp;</td><td><p>T76AV7DF</p></td></tr>
+          <tr><td><p>VIGENCIA:</p></td><td>&nbsp;</td><td><p>2024</p></td></tr>
         </tbody>
       </table>
     </div>
