@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Verificación de Tarjeta de Circulación</title>
+  <title>JSP Page</title>
   <script>
     console.log("muestra datos 1");
     console.log("muestra datos 2");
@@ -10,48 +10,38 @@
       window.close();
     }
   </script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
-    #header {
-      text-align: center;
-      background-color: #ffffff;
-      padding: 10px 0;
-    }
-    #header img {
-      max-width: 100%;
-      height: auto;
-    }
-    #divDescripcion {
-      margin-top: 20px;
-    }
-    table {
-      border-collapse: collapse;
-    }
-    th {
-      font-size: 1.5em;
-      padding-bottom: 10px;
-    }
-    td {
-      padding: 5px 10px;
-    }
-  </style>
 </head>
 <body>
 
-  <div id="header">
-    <img src="images/bannerVerificaTC.gif" alt="Verificación de la Tarjeta de Circulación">
+  <!-- Replicated Header from titulo_frame.html -->
+  <div align="center">
+    <table width="1024" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="3">
+          <img src="images/bannerVerificaTC.gif" width="1024" height="115" alt="Secretaría de Hacienda">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <img src="images/DivisionBlanco.png" width="1024" height="10" alt="División Blanca">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <img src="images/DivisionColor.png" width="1079" height="15" alt="División Color">
+        </td>
+      </tr>
+    </table>
   </div>
 
+  <br>
+
+  <!-- Existing Vehicle Data Section -->
   <div align="center" id="divDescripcion">
     <table align="center">
       <thead>
         <tr>
-          <th align="center" colspan="3">DATOS DEL VEHÍCULO</th>
+          <th align="center" colspan="3"><h1>DATOS DEL VEHÍCULO</h1></th>
         </tr>
       </thead>
       <tbody>
@@ -65,3 +55,14 @@
         <tr><td align="right">COLOR:</td><td>&nbsp;</td><td>BLANCO</td></tr>
         <tr><td align="right">ORIGEN:</td><td>&nbsp;</td><td>EXTRANJERO</td></tr>
         <tr><td align="right">REPUVE:</td><td>&nbsp;</td><td>T76AV7DF</td></tr>
+        <tr><td align="right">VIGENCIA:</td><td>&nbsp;</td><td>2024</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    console.log("muestra datos 3");
+  </script>
+
+</body>
+</html>
