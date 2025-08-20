@@ -1,32 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificación de la Tarjeta de Circulación</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      font-family: serif;
+    }
+    .container {
+      width: 980px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .divider {
+      margin: 4px 0;
+    }
+    #divDescripcion {
+      margin-top: 20px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    th {
+      font-size: 1.5em;
+      padding-bottom: 10px;
+    }
+    td {
+      padding: 4px 8px;
+      vertical-align: top;
+    }
+    p {
+      margin: 0;
+    }
+  </style>
+</head>
 <body>
-  <div style="text-align: center;">
-    <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="567" height="88">
-    <br>
-    <img src="images/DivisionBlanco.png" alt="División Blanco" width="1" height="10">
-    <br>
-    <img src="images/DivisionColor.png" alt="División Color" width="1" height="10">
-  </div>
+  <div class="container">
+    <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="980" height="88">
+    <div class="divider">
+      <img src="images/DivisionBlanco.png" alt="División Blanco" width="980" height="10">
+    </div>
+    <div class="divider">
+      <img src="images/DivisionColor.png" alt="División Color" width="980" height="10">
+    </div>
 
-  <div align="center" id="divDescripcion">
-    <table align="center">
-      <thead>
-        <tr>
-          <th align="center" colspan="3"><h1>DATOS DEL VEHÍCULO</h1></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td align="right"><p>RFC:</p></td><td>&nbsp;</td><td><p>AAFC720116HN2</p></td></tr>
-        <tr><td align="right"><p>PROPIETARIO:</p></td><td>&nbsp;</td><td><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
-        <tr><td align="right"><p>PLACA:</p></td><td>&nbsp;</td><td><p>EKP165B</p></td></tr>
-        <tr><td align="right"><p>NÚMERO DE SERIE:</p></td><td>&nbsp;</td><td><p>JN8AS5MV8CW378588</p></td></tr>
-        <tr><td align="right"><p>MARCA:</p></td><td>&nbsp;</td><td><p>NISSAN</p></td></tr>
-        <tr><td align="right"><p>LÍNEA:</p></td><td>&nbsp;</td><td><p>ROGUE</p></td></tr>
-        <tr><td align="right"><p>MODELO:</p></td><td>&nbsp;</td><td><p>2012</p></td></tr>
-        <tr><td align="right"><p>COLOR:</p></td><td>&nbsp;</td><td><p>BLANCO</p></td></tr>
-        <tr><td align="right"><p>ORIGEN:</p></td><td>&nbsp;</td><td><p>EXTRANJERO</p></td></tr>
-        <tr><td align="right"><p>REPUVE:</p></td><td>&nbsp;</td><td><p>T76AV7DF</p></td></tr>
-        <tr><td align="right"><p>VIGENCIA:</p></td><td>&nbsp;</td><td><p>2024</p></td></tr>
-      </tbody>
-    </table>
-  </div>
-</body>
+    <div id="divDescripcion">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">DATOS DEL VEHÍCULO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td align="right"><p>RFC:</p></td><td>&nbsp;</td><td><p>AAFC720116HN2</p></td></tr>
+          <tr><td align="right"><p>PROPIETARIO:</p></td><td>&nbsp;</td><td><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
+          <tr><td align="right"><p>PLACA:</p></td><td>&nbsp;</td><td><p>EKP165B</p></td></tr>
+          <tr><td align="right"><p>NÚMERO DE SERIE:</p></td><td>&nbsp;</td><td><p>JN8AS5MV8CW378588</p></td></tr>
+          <tr><td align="right"><p>MARCA:</p></td><td>&nbsp;</td><td><p>NISSAN</p></td></tr>
+          <tr><td align="right"><p>LÍNEA:</p></td><td>&nbsp;</td><td><p>ROGUE</p></td></tr>
+          <tr><td align="right"><p>MODELO:</p></td><td>&nbsp;</td><td><p>2012</p></td></tr>
+          <tr><td align="right"><p>COLOR:</p></td><td>&nbsp;</td><td><p>BLANCO</p></td></tr>
+          <tr><td align="right"><p>ORIGEN:</p></td>
