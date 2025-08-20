@@ -2,42 +2,38 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Consulta de Vehículo</title>
+  <title>Verificación de la Tarjeta de Circulación</title>
   <style>
     body {
       margin: 0;
       background-color: #ffffff;
-      font-family: Arial, sans-serif;
+      font-family: serif;
     }
 
-    .banner {
+    .header {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
+      background-color: #ffffff;
       z-index: 1000;
-      background-color: #ffffff;
+      padding-top: 10px;
     }
 
-    .banner img {
-      display: block;
-      width: 100%;
-      height: 88px;
+    .banner-container {
+      width: 567px;
+      margin: 0 auto;
+      text-align: center;
     }
 
-    .DivisionBlanco {
-      height: 10px;
-      background-color: #ffffff;
-    }
-
-    .DivisionColor {
-      height: 10px;
-      background-color: #003366;
+    .divider {
+      margin: 4px 0;
     }
 
     .content {
-      margin-top: 160px; /* Pushes content below fixed banner */
-      padding: 0 20px;
+      padding-top: 130px; /* Push below fixed header */
+      width: 980px;
+      margin: 0 auto;
     }
 
     table {
@@ -45,48 +41,68 @@
       border-collapse: collapse;
     }
 
-    td {
-      padding: 5px;
-      font-size: 14px;
-    }
-
-    .section-title {
-      font-size: 18px;
+    th {
+      font-size: 1.2em;
       font-weight: bold;
       text-align: center;
-      padding: 10px 0;
+      padding-bottom: 10px;
+    }
+
+    td {
+      padding: 6px 8px;
+      vertical-align: top;
+    }
+
+    td p {
+      margin: 0;
+      line-height: 2.4; /* Matches original scroll spacing */
+    }
+
+    .label {
+      text-align: right;
+      white-space: nowrap;
+      width: 35%;
+    }
+
+    .value {
+      text-align: left;
+      width: 65%;
     }
   </style>
 </head>
 <body>
-  <div class="banner">
-    <img src="banner.gif" alt="Banner animado">
-    <div class="DivisionBlanco"></div>
-    <div class="DivisionColor"></div>
+  <div class="header">
+    <div class="banner-container">
+      <img src="images/bannerVerificaTC.gif" alt="Secretaría de Hacienda" width="567" height="88">
+      <div class="divider">
+        <img src="images/DivisionBlanco.png" alt="División Blanco" width="567" height="10">
+      </div>
+      <div class="divider">
+        <img src="images/DivisionColor.png" alt="División Color" width="567" height="10">
+      </div>
+    </div>
   </div>
 
   <div class="content">
     <table>
-      <tr>
-        <td colspan="2" class="section-title">DATOS DEL VEHÍCULO</td>
-      </tr>
-      <tr>
-        <td><b>Placa:</b></td>
-        <td>ABC123</td>
-      </tr>
-      <tr>
-        <td><b>Marca:</b></td>
-        <td>Ford</td>
-      </tr>
-      <tr>
-        <td><b>Modelo:</b></td>
-        <td>2008</td>
-      </tr>
-      <tr>
-        <td><b>Color:</b></td>
-        <td>Rojo</td>
-      </tr>
-      <!-- Add more rows as needed -->
+      <thead>
+        <tr>
+          <th colspan="2">DATOS DEL VEHÍCULO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="label"><p>RFC:</p></td><td class="value"><p>AAFC720116HN2</p></td></tr>
+        <tr><td class="label"><p>PROPIETARIO:</p></td><td class="value"><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
+        <tr><td class="label"><p>PLACA:</p></td><td class="value"><p>EKP165B</p></td></tr>
+        <tr><td class="label"><p>NÚMERO DE SERIE:</p></td><td class="value"><p>JN8AS5MV8CW378588</p></td></tr>
+        <tr><td class="label"><p>MARCA:</p></td><td class="value"><p>NISSAN</p></td></tr>
+        <tr><td class="label"><p>LÍNEA:</p></td><td class="value"><p>ROGUE</p></td></tr>
+        <tr><td class="label"><p>MODELO:</p></td><td class="value"><p>2012</p></td></tr>
+        <tr><td class="label"><p>COLOR:</p></td><td class="value"><p>BLANCO</p></td></tr>
+        <tr><td class="label"><p>ORIGEN:</p></td><td class="value"><p>EXTRANJERO</p></td></tr>
+        <tr><td class="label"><p>REPUVE:</p></td><td class="value"><p>T76AV7DF</p></td></tr>
+        <tr><td class="label"><p>VIGENCIA:</p></td><td class="value"><p>2024</p></td></tr>
+      </tbody>
     </table>
   </div>
 </body>
