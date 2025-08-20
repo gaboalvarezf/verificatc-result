@@ -5,8 +5,8 @@
   <title>Verificación de la Tarjeta de Circulación</title>
   <style>
     body {
-      background-color: #ffffff;
       margin: 0;
+      background-color: #ffffff;
       font-family: serif;
     }
 
@@ -31,10 +31,7 @@
     }
 
     .content {
-      padding-top: 130px;
-    }
-
-    .table-container {
+      padding-top: 130px; /* Push below fixed header */
       width: 980px;
       margin: 0 auto;
     }
@@ -58,18 +55,18 @@
 
     td p {
       margin: 0;
-      line-height: 2.2;
+      line-height: 2.4; /* Matches original scroll spacing */
     }
 
     .label {
       text-align: right;
       white-space: nowrap;
-      width: 30%;
+      width: 35%;
     }
 
     .value {
       text-align: left;
-      width: 70%;
+      width: 65%;
     }
   </style>
 </head>
@@ -87,22 +84,26 @@
   </div>
 
   <div class="content">
-    <div class="table-container" id="divDescripcion">
-      <table>
-        <thead>
-          <tr>
-            <th colspan="2">DATOS DEL VEHÍCULO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td class="label"><p>RFC:</p></td><td class="value"><p>AAFC720116HN2</p></td></tr>
-          <tr><td class="label"><p>PROPIETARIO:</p></td><td class="value"><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
-          <tr><td class="label"><p>PLACA:</p></td><td class="value"><p>EKP165B</p></td></tr>
-          <tr><td class="label"><p>NÚMERO DE SERIE:</p></td><td class="value"><p>JN8AS5MV8CW378588</p></td></tr>
-          <tr><td class="label"><p>MARCA:</p></td><td class="value"><p>NISSAN</p></td></tr>
-          <tr><td class="label"><p>LÍNEA:</p></td><td class="value"><p>ROGUE</p></td></tr>
-          <tr><td class="label"><p>MODELO:</p></td><td class="value"><p>2012</p></td></tr>
-          <tr><td class="label"><p>COLOR:</p></td><td class="value"><p>BLANCO</p></td></tr>
-          <tr><td class="label"><p>ORIGEN:</p></td><td class="value"><p>EXTRANJERO</p></td></tr>
-          <tr><td class="label"><p>REPUVE:</p></td><td class="value"><p>T76AV7DF</p></td></tr>
-          <tr><td class="label">
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">DATOS DEL VEHÍCULO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="label"><p>RFC:</p></td><td class="value"><p>AAFC720116HN2</p></td></tr>
+        <tr><td class="label"><p>PROPIETARIO:</p></td><td class="value"><p>ALVAREZ FLORES CARMEN MARCELA</p></td></tr>
+        <tr><td class="label"><p>PLACA:</p></td><td class="value"><p>EKP165B</p></td></tr>
+        <tr><td class="label"><p>NÚMERO DE SERIE:</p></td><td class="value"><p>JN8AS5MV8CW378588</p></td></tr>
+        <tr><td class="label"><p>MARCA:</p></td><td class="value"><p>NISSAN</p></td></tr>
+        <tr><td class="label"><p>LÍNEA:</p></td><td class="value"><p>ROGUE</p></td></tr>
+        <tr><td class="label"><p>MODELO:</p></td><td class="value"><p>2012</p></td></tr>
+        <tr><td class="label"><p>COLOR:</p></td><td class="value"><p>BLANCO</p></td></tr>
+        <tr><td class="label"><p>ORIGEN:</p></td><td class="value"><p>EXTRANJERO</p></td></tr>
+        <tr><td class="label"><p>REPUVE:</p></td><td class="value"><p>T76AV7DF</p></td></tr>
+        <tr><td class="label"><p>VIGENCIA:</p></td><td class="value"><p>2024</p></td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
