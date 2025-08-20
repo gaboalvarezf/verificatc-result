@@ -32,6 +32,7 @@
 
     .content {
       padding-top: 150px;
+      padding-bottom: 30px; /* Prevent overlap with footer */
       display: flex;
       justify-content: center;
     }
@@ -73,13 +74,14 @@
       padding-top: 10px;
     }
 
-    .footer {
-      text-align: center;
-      color: blue;
-      cursor: default;
-      margin: 40px 0;
-      font-size: 10px;
-      font-family: 'Roboto', sans-serif;
+    .footer-frame {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; /* Match original footer height */
+      border: none;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -119,8 +121,7 @@
     </table>
   </div>
 
-  <div class="footer">
-    Verificación de Tarjeta de Circulación Versión: 1.0.0.0 2002204.1620
-  </div>
+  <!-- Embedded footer from external file -->
+  <iframe src="footer.html" class="footer-frame" scrolling="no"></iframe>
 </body>
 </html>
